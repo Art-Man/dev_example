@@ -1,0 +1,5 @@
+<bean id="multipartResolver" class="com.rensanning.test.core.fileupload.CustomMultipartResolver">
+    <property name="defaultEncoding" value="UTF-8"/>
+    <property name="fileSizeMax" value="20971520"/><!-- 20M ： Maximum size of a single uploaded file-->
+    <property name="maxUploadSize" value="52428800"/><!-- 50M ： The maximum allowed size of a complete request-->
+</bean>
